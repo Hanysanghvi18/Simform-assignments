@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 50px;
   }
-  table {
+table {
     background: rgb(247, 241, 241);
     border: 2px solid #3a383800;
     text-align: center;
@@ -11,10 +11,10 @@ body {
     margin-top: 90px;
   }
   
-  button.equal:hover{
+button.equal:hover{
   background: #4e504f;
   }
-  input[type="text"] {
+input[type="text"] {
     width: 450px;
     height: 60px;
     border: 1px solid #000;
@@ -24,8 +24,8 @@ body {
     font-weight: bold;
     margin-bottom: 25px;
     color: #dedede;
-  }
-  button {
+}
+button {
     width: 80px;
     height: 40px;
     margin-bottom: 2px;
@@ -35,8 +35,39 @@ body {
     background: #000803;
     border: none;
     color: white;
-  }
-  
-  button:hover{
+}
+
+button:hover{
   background: #34849c;
-  }
+ }
+
+.dropdownbtn {
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  height: 20px;
+}
+
+.dropdownlist-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 120px;
+  z-index: 1;
+}
+.dropdownlist-content a {
+  color: black;
+  padding: 14px 18px;
+  display: block;
+}
+.dropdownlist-content a:hover {background-color: #1d5469;}
+.dropdowndemo:hover .dropdownlist-content {display: block;}
+.dropdowndemo:hover .dropdownbtn {background-color: #34849c;}
+  
+.dreg{
+      display: flex;
+      justify-content: left;
+      align-items: left;
+}
