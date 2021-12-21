@@ -15,19 +15,45 @@
                 <td colspan="5">
                 <input type="text" name="result" placeholder="0" style="text-align: right;" id=""> </td>
              </tr>
-                <tr>
-                <td><button type="button" value="sin" onclick="sin()">sin</button></td>
-                <td><button type="button" value="cos" onclick="cos()">cos</button></td>
-                <td><button type="button" value="tan" onclick="tan()">tan</button></td>
-                <td><button type="button" value="ln" onclick="logorithm(value)">ln</button></td>
-                <td><button type="button" value="BACKSPC" onclick="BACKSPC()">C</button></td>  
-            </tr>
+            <tr> 
+                <td colspan="2">
+                    <div class="dropdowndemo">
+                        <button class="dropdownbtn"><small>∆</small> Trignometry </button>
+                        <div class="dropdownlist-content">
+                        <a href="#" onclick="sin()">sin</a> 
+                        <a href="#" onclick="asin()">asin</a>
+                        <a href="#" onclick="asinh()">asinh</a>
+                        <a href="#" onclick="sinh()">sinh</a>
+                        <a href="#" onclick="cos()">cos</a>
+                        <a href="#" onclick="acos()">acos</a>
+                        <a href="#" onclick="acosh()">acosh</a>
+                        <a href="#" onclick="cosh()">cosh</a>
+                        <a href="#" onclick="tan()">tan</a>
+                        <a href="#" onclick="atan()">atan</a>
+                        <a href="#" onclick="atan2()">atan2</a>
+                        <a href="#" onclick="tanh()">tanh</a>
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div class="dropdowndemo">
+                        <button class="dropdownbtn">Functions <i><small>f</small></i></button>
+                        <div class="dropdownlist-content">
+                        <a href="#" onclick="abs()">abs</a>
+                        <a href="#" onclick="round()">round</a>
+                        <a href="#" onclick="ceil()">ceil</a>
+                        <a href="#" onclick="floor()">floor</a>
+                        </div>
+                    </div>
+                </td>
+            </div>
+        </tr>
             <tr>
                 <td><button type="button" value="π" onclick="pi()">π</button></td>
                 <td><button type="button" value="e" onclick="e()">e</button></td>
-                <td><button type="button" value="root" onclick="root()"><sup>2</sup>√x</button></td>
-                <td><button type="button" value="sqrt3" onclick="sqrt3()"> &#8731; </button> </td>
+                
+                <td><button type="button" value="log" onclick="log(value)">log</button></td>
                 <td><button type="button" value="<--" onclick="deleteChar()"><--</button></td>
+                <td><button type="button" value="BACKSPC" onclick="BACKSPC()">C</button></td>
                 
             </tr>
             <tr>
@@ -45,34 +71,35 @@
                 <td><button type="button" value="-" onclick="number(value)">-</button></td>
             </tr>
             <tr>
-                <td><button type="button" value="ceil" onclick="ceil()">ceil</button></td>
+                <td><button type="button" value="root" onclick="root()"><sup>2</sup>√x</button></td>
                 <td><button type="button" value="4" onclick="number(value)">4</button></td>
                 <td><button type="button" value="5" onclick="number(value)">5</button></td>
                 <td><button type="button" value="6" onclick="number(value)">6</button></td>
                 <td><button type="button" value="/" onclick="number(value)">/</button></td>
             </tr>
             <tr>
-                <td><button type="button" value="log" onclick="log(value)">log</button></td>
+                <td><button type="button" value="sqrt3" onclick="sqrt3()"> &#8731; </button> </td>
                 <td><button type="button" value="1" onclick="number(value)">1</button></td>
                 <td><button type="button" value="2" onclick="number(value)">2</button></td>
                 <td><button type="button" value="3" onclick="number(value)">3</button></td>
                 <td><button type="button" value="+" onclick="number(value)">+</button></td>
             </tr>
             <tr>
-                <td><button type="button" value="floor" onclick="floor()">floor</button></td>
+                <td><button type="button" name="nfact" value="factorial" onclick="factorial()">n!</button></td>
                 <td><button type="button" name="btnMath" value="posnaga" onclick="changeSign()">-+</button></td>
                 <td><button type="button" value="0" onclick="number(value)">0</button></td>
                 <td><button type="button" value="." onclick="number(value)">.</button></td>
                 <td><button type="button" value="=" onclick="equal()" class="equal">=</button></td>
             </tr>
             <tr>
-                <td><button type="button" value="round" onclick="round()">round</button></td>
+                <td><button type="button" value="(" class="bracket" onclick="obracket(value)">(</button></td>
+                <td><button type="button" value=")"  class="bracket" onclick="cbracket(value)">)</button></td>
                 <td><button type="button" value="memoryplus" onclick="memory_p()">M+</button></td>
                 <td><button type="button" value="memorysave" onclick="memory_s()">M-</button>
+                <td><button type="button" value="ln" onclick="logorithm(value)">ln</button></td>
                 </td>
             </tr>
         </table>
         </form>
-        
     </body>
 </html>
