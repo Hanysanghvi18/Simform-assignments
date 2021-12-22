@@ -13,66 +13,104 @@
         <table align="center">
             <tr>
                 <td colspan="5">
-                <input type="text" name="result" placeholder="0" style="text-align: right;" id=""> </td>
+                <input type="text" name="result" placeholder="0" style="text-align: right;" id=""></td>
              </tr>
-                <tr>
-                <td><button type="button" value="sin" onclick="sin()">sin</button></td>
-                <td><button type="button" value="cos" onclick="cos()">cos</button></td>
-                <td><button type="button" value="tan" onclick="tan()">tan</button></td>
-                <td><button type="button" value="ln" onclick="logorithm(value)">ln</button></td>
-                <td><button type="button" value="BACKSPC" onclick="BACKSPC()">C</button></td>  
-            </tr>
+             <tr>
+                <td><button type="button" value="degree" onclick="degree(value)">DEG</button></td>
+                <td><button type="button" value="FixedToExponent" onclick="fixed_to_exponent()">F-E</button>
+        <!-- Memory Buttons that can save and remove data from the memory -->
+                <td><button type="button" value="memoryplus" onclick="memory_p()">M+</button></td>
+                <td><button type="button" value="memorysubract" onclick="memory_s()">M-</button>
+                <td><button type="button" value="memorysave" onclick="print_ms()">MS</button></td>
+                <td><div class="dropdowndemo">
+                </td>
+             </tr>
+             <tr> 
+        <!-- Trignometry functions -->
+                <td colspan="2">
+                    <div class="dropdowndemo">
+                        <button class="dropdownbtn"><small>∆</small> Trignometry </button>
+                        <div class="dropdownlist-content">
+                        <a href="#" onclick="sin()">sin</a> 
+                        <a href="#" onclick="asin()">asin</a>
+                        <a href="#" onclick="asinh()">asinh</a>
+                        <a href="#" onclick="sinh()">sinh</a>
+                        <a href="#" onclick="cos()">cos</a>
+                        <a href="#" onclick="acos()">acos</a>
+                        <a href="#" onclick="acosh()">acosh</a>
+                        <a href="#" onclick="cosh()">cosh</a>
+                        <a href="#" onclick="tan()">tan</a>
+                        <a href="#" onclick="atan()">atan</a>
+                        <a href="#" onclick="atan2()">atan2</a>
+                        <a href="#" onclick="tanh()">tanh</a>
+                    </div>
+                </td>
+        <!-- Math functions  -->
+                <td colspan="2">
+                    <div class="dropdowndemo">
+                        <button class="dropdownbtn">Functions <i><small>f</small></i></button>
+                        <div class="dropdownlist-content">
+                        <a href="#" onclick="abs()">abs</a>
+                        <a href="#" onclick="round()">round</a>
+                        <a href="#" onclick="ceil()">ceil</a>
+                        <a href="#" onclick="floor()">floor</a>
+                        </div>
+                    </div>
+                    </div>
+                </td>
+             </tr>
             <tr>
                 <td><button type="button" value="π" onclick="pi()">π</button></td>
                 <td><button type="button" value="e" onclick="e()">e</button></td>
-                <td><button type="button" value="root" onclick="root()"><sup>2</sup>√x</button></td>
-                <td><button type="button" value="sqrt3" onclick="sqrt3()"> &#8731; </button> </td>
+                <td><button type="button" value="log" onclick="log(value)">log</button></td>
+                <td><button type="button" value="Clear" onclick="Clear()">C</button></td>
                 <td><button type="button" value="<--" onclick="deleteChar()"><--</button></td>
-                
             </tr>
             <tr>
                 <td><button type="button" value="square" onclick="square()">x<sup>2</sup></button></td>
-                <td><button type="button" value="1/x" onclick="half()"><sup>1</sup>/x</button></td>
+                <td><button type="button" value="1/x" onclick="half(value)"><sup>1</sup>/x</button></td>
                 <td><button type="button" value="|x|" onclick="abs()">|x|</button></td>
                 <td><button type="button" value="exp" onclick="exp()"> exp</button></td>
                 <td><button type="button" value="*" onclick="number(value)">*</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="root" onclick="root()"><sup>2</sup>√x</button></td>
+                <td><button type="button" value="(" onclick="openbracket(value)">(</button></td>
+                <td><button type="button" value=")" onclick="closebracket(value)">)</button></td>
+                <td><button type="button" name="nfact" value="factorial" onclick="factorial()">n!</button></td>
+                <td><button type="button" value="/" onclick="number(value)">/</button></td>
             </tr>
             <tr>
                 <td><button type="button" value="x^3" onclick="cubed()"> x<sup>3 </button> </td> 
                 <td><button type="button" value="7" onclick="number(value)">7</button></td>
                 <td><button type="button" value="8" onclick="number(value)">8</button></td>
                 <td><button type="button" value="9" onclick="number(value)">9</button></td>
-                <td><button type="button" value="-" onclick="number(value)">-</button></td>
+                <td><button type="button" value="-" onclick="number(value)">-</button></td> 
             </tr>
             <tr>
-                <td><button type="button" value="ceil" onclick="ceil()">ceil</button></td>
+                <td><button type="button" value="ten_power" onclick="ten_power_x()">10<sup>x</sup></button></td>
                 <td><button type="button" value="4" onclick="number(value)">4</button></td>
                 <td><button type="button" value="5" onclick="number(value)">5</button></td>
                 <td><button type="button" value="6" onclick="number(value)">6</button></td>
-                <td><button type="button" value="/" onclick="number(value)">/</button></td>
-            </tr>
-            <tr>
-                <td><button type="button" value="log" onclick="log(value)">log</button></td>
-                <td><button type="button" value="1" onclick="number(value)">1</button></td>
-                <td><button type="button" value="2" onclick="number(value)">2</button></td>
-                <td><button type="button" value="3" onclick="number(value)">3</button></td>
+               
                 <td><button type="button" value="+" onclick="number(value)">+</button></td>
             </tr>
             <tr>
-                <td><button type="button" value="floor" onclick="floor()">floor</button></td>
-                <td><button type="button" name="btnMath" value="posnaga" onclick="changeSign()">-+</button></td>
+                <td><button type="button" value="sqrt3" onclick="sqrt3()"> &#8731;</button></td>
+                <td><button type="button" value="1" onclick="number(value)">1</button></td>
+                <td><button type="button" value="2" onclick="number(value)">2</button></td>
+                <td><button type="button" value="3" onclick="number(value)">3</button></td>
+                <td><button type="button" value="%" onclick="mod(value)">mod</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="ln" onclick="logorithm(value)">ln</button></td>
+                <td><button type="button" name="btnMath" value="pos_neg" onclick="changeSign()">-+</button></td>
                 <td><button type="button" value="0" onclick="number(value)">0</button></td>
                 <td><button type="button" value="." onclick="number(value)">.</button></td>
                 <td><button type="button" value="=" onclick="equal()" class="equal">=</button></td>
-            </tr>
-            <tr>
-                <td><button type="button" value="round" onclick="round()">round</button></td>
-                <td><button type="button" value="memoryplus" onclick="memory_p()">M+</button></td>
-                <td><button type="button" value="memorysave" onclick="memory_s()">M-</button>
                 </td>
             </tr>
         </table>
         </form>
-        
     </body>
 </html>
