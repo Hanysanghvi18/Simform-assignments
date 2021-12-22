@@ -15,17 +15,8 @@
                 <td colspan="5">
                 <input type="text" name="result" placeholder="0" style="text-align: right;" id=""></td>
              </tr>
-             <tr>
-                <td><button type="button" value="degree" onclick="degree(value)">DEG</button></td>
-                <td><button type="button" value="FixedToExponent" onclick="fixed_to_exponent()">F-E</button>
-        <!-- Memory Buttons that can save and remove data from the memory -->
-                <td><button type="button" value="memoryplus" onclick="memory_p()">M+</button></td>
-                <td><button type="button" value="memorysubract" onclick="memory_s()">M-</button>
-                <td><button type="button" value="memorysave" onclick="print_ms()">MS</button></td>
-                <td><div class="dropdowndemo">
-                </td>
-             </tr>
              <tr> 
+                <td><button type="button" value="degree" onclick="degree(value)">DEG</button></td>
         <!-- Trignometry functions -->
                 <td colspan="2">
                     <div class="dropdowndemo">
@@ -59,6 +50,14 @@
                     </div>
                 </td>
              </tr>
+             <td><button type="button" value="FixedToExponent" onclick="fixed_to_exponent()">F-E</button>
+             <!-- Memory Buttons that can save and remove data from the memory -->
+             <td><button type="button" value="memoryrecall" onclick="memory_recall()">MR</button>
+             <td><button type="button" value="memoryplus" onclick="memory_p()">M+</button></td>
+             <td><button type="button" value="memorysubract" onclick="memory_s()">M-</button>
+             <td><button type="button" value="memorysave" onclick="print_ms()">MS</button></td>
+             <td><div class="dropdowndemo">
+             </td>
             <tr>
                 <td><button type="button" value="π" onclick="pi()">π</button></td>
                 <td><button type="button" value="e" onclick="e()">e</button></td>
