@@ -1,5 +1,3 @@
-var ms= "";
-
 function degree(){
     document.calculator.result.value = (document.calculator.result.value * Math.PI) / 180;
 }
@@ -7,21 +5,31 @@ function fixed_to_exponent(){
     document.calculator.result.value = (document.calculator.result.value- 32) / 1.8;
 }
 
-// Memory functions that can save and remove data from the memory.
+// Memory function that can add data in the memory.
+var ms= ""; 
 function memory_p() {
     if (document.calculator.result.value =='') { return }
     ms += '+'+document.calculator.result.value;
-    document.calculator.result.value = 0;
+    document.calculator.result.value = "";
 }
+// memory function that can subract data from the memory.
 function memory_s() {
     if (document.calculator.result.value =='') { return }
     ms += '-'+document.calculator.result.value;
-    document.calculator.result.value = 0;
+    document.calculator.result.value = "";
 }
+// memory function that stores the data in the memory and gives the output.
 function print_ms(){
-    if(ms){
         document.calculator.result.value = eval(ms);
-    }
+          
+}
+//memory function that can recall data line by line.
+var i= 0;
+function memory_recall(){
+   i %= eval(ms.length);
+   document.calculator.result.value = ms[i]; 
+   i++;
+   
 }
 
 // Trigonometry functions.
