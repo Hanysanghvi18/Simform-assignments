@@ -26,7 +26,7 @@ insert into EmployeePosition(EmpPosition, DateOfJoining, Salary)
 => select * from EmployeeInfo where EmpFname LIKE 'S%';
 
 5. Write a query to fetch top N records order by salary(ex. top 5 records).
-=> select top n* from EmployeePosition order by Salary asc fetch first 5 rows only;
+=> select * from EmployeePosition order by Salary asc fetch first 5 rows only;
 
 6. Write a query to fetch details of all employees excluding the employees with first names, “Sanjay” and “Sonia” from the EmployeeInfo table.
 => select * from EmployeeInfo where EmpFname NOT IN ('Sanjay','Sonia');
